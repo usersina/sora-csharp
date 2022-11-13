@@ -18,4 +18,17 @@ public class User
     public string? Phone { get; set; }
     public string? Birthday { get; set; }
     public string? Country { get; set; }
+
+    // --------- Relations --------- //
+
+    public ICollection<Genre> Genres { get; set; }
+
+    public int? DesignationId { get; set; }
+    public Designation? Designation { get; set; }
+
+    public ICollection<Artwork> Artworks { get; set; }
+
+    public ICollection<UserCollection> UserCollections { get; set; }
+
+    public ICollection<ArtworkRating> ArtworkRatings { get; set; }
 }

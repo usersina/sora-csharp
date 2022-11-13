@@ -9,4 +9,8 @@ namespace SoraApp.Entities;
 public class Reviewer : User
 {
     public DateTime? VerifiedAt { get; set; }
+
+    // --------- Relations --------- //
+
+    public ICollection<ArtworkReview> ArtworkReviews { get; set; }
 }

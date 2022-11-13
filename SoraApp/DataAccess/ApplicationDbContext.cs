@@ -18,16 +18,31 @@ public class ApplicationDbContext : DbContext
 
     public DbSet<User> Users { get; set; }
     public DbSet<Reviewer> Reviewers { get; set; }
+    public DbSet<Book> Books { get; set; }
+    public DbSet<Audio> Audios { get; set; }
+    public DbSet<Genre> Genres { get; set; }
+    public DbSet<Designation> Designations { get; set; }
+    public DbSet<UserCollection> UserCollections { get; set; }
+    public DbSet<ArtworkReview> ArtworkReviews { get; set; }
+    public DbSet<ArtworkRating> ArtworkRatings { get; set; }
 
     public ApplicationDbContext()
     {
         connectionString = ConfigurationManager.Instance.ConnectionStrings[1].ToString();
     }
 
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<User>()
+            .HasMany(left => left.Genres)
+            .WithMany(right => right.Users)
+            .UsingEntity(join => join.ToTable("interests"));
+    }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         Debug.WriteLine("OnConfiguring was called!");
-        optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect("Server=localhost;Database=sora_csharp;Uid=root;Pwd=;"));
+        optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
     }
 
     //public ApplicationDbContext(string connectionString) : base(GetOptions(connectionString)) { }
