@@ -1,3 +1,5 @@
+using SoraApp.Forms;
+
 namespace SoraApp
 {
     internal static class Program
@@ -11,7 +13,7 @@ namespace SoraApp
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Index());
+            Application.Run(new Login());
         }
     }
 }
