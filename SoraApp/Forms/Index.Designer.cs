@@ -50,6 +50,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.HeaderPanel = new System.Windows.Forms.Panel();
+            this.TabControl = new System.Windows.Forms.TabControl();
+            this.HomeTabPage = new System.Windows.Forms.TabPage();
+            this.CollectionTabPage = new System.Windows.Forms.TabPage();
+            this.SavedTabPage = new System.Windows.Forms.TabPage();
+            this.ProfileTabPage = new System.Windows.Forms.TabPage();
             this.SidebarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AvatarPb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.QuitPb)).BeginInit();
@@ -57,6 +62,7 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.HeaderPanel.SuspendLayout();
+            this.TabControl.SuspendLayout();
             this.SuspendLayout();
             // 
             // SidebarPanel
@@ -233,7 +239,7 @@
             this.panel2.Location = new System.Drawing.Point(236, 50);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(961, 71);
+            this.panel2.Size = new System.Drawing.Size(961, 49);
             this.panel2.TabIndex = 1;
             // 
             // panel1
@@ -342,6 +348,58 @@
             this.HeaderPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.HeaderPanel_MouseMove);
             this.HeaderPanel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.HeaderPanel_MouseUp);
             // 
+            // TabControl
+            // 
+            this.TabControl.Controls.Add(this.HomeTabPage);
+            this.TabControl.Controls.Add(this.CollectionTabPage);
+            this.TabControl.Controls.Add(this.SavedTabPage);
+            this.TabControl.Controls.Add(this.ProfileTabPage);
+            this.TabControl.Location = new System.Drawing.Point(236, 97);
+            this.TabControl.Name = "TabControl";
+            this.TabControl.SelectedIndex = 0;
+            this.TabControl.Size = new System.Drawing.Size(961, 576);
+            this.TabControl.TabIndex = 3;
+            // 
+            // HomeTabPage
+            // 
+            this.HomeTabPage.BackColor = System.Drawing.Color.Transparent;
+            this.HomeTabPage.Location = new System.Drawing.Point(4, 24);
+            this.HomeTabPage.Name = "HomeTabPage";
+            this.HomeTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.HomeTabPage.Size = new System.Drawing.Size(953, 548);
+            this.HomeTabPage.TabIndex = 0;
+            this.HomeTabPage.Text = "Home";
+            // 
+            // CollectionTabPage
+            // 
+            this.CollectionTabPage.BackColor = System.Drawing.Color.Transparent;
+            this.CollectionTabPage.Location = new System.Drawing.Point(4, 24);
+            this.CollectionTabPage.Name = "CollectionTabPage";
+            this.CollectionTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.CollectionTabPage.Size = new System.Drawing.Size(953, 548);
+            this.CollectionTabPage.TabIndex = 1;
+            this.CollectionTabPage.Text = "Collection";
+            // 
+            // SavedTabPage
+            // 
+            this.SavedTabPage.Location = new System.Drawing.Point(4, 24);
+            this.SavedTabPage.Name = "SavedTabPage";
+            this.SavedTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.SavedTabPage.Size = new System.Drawing.Size(953, 548);
+            this.SavedTabPage.TabIndex = 2;
+            this.SavedTabPage.Text = "Saved";
+            this.SavedTabPage.UseVisualStyleBackColor = true;
+            // 
+            // ProfileTabPage
+            // 
+            this.ProfileTabPage.Location = new System.Drawing.Point(4, 24);
+            this.ProfileTabPage.Name = "ProfileTabPage";
+            this.ProfileTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.ProfileTabPage.Size = new System.Drawing.Size(953, 548);
+            this.ProfileTabPage.TabIndex = 3;
+            this.ProfileTabPage.Text = "Profile";
+            this.ProfileTabPage.UseVisualStyleBackColor = true;
+            // 
             // Index
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -350,6 +408,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.SidebarPanel);
             this.Controls.Add(this.HeaderPanel);
+            this.Controls.Add(this.TabControl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Index";
@@ -366,6 +425,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.HeaderPanel.ResumeLayout(false);
             this.HeaderPanel.PerformLayout();
+            this.TabControl.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -393,6 +453,11 @@
         private Label label2;
         private Button button14;
         private Panel panel2;
+        private TabControl TabControl;
+        private TabPage HomeTabPage;
+        private TabPage CollectionTabPage;
+        private TabPage SavedTabPage;
+        private TabPage ProfileTabPage;
         //private FirstCustomControl firstCustomControl1;
         //private MySecondCustmControl mySecondCustmControl1;
     }

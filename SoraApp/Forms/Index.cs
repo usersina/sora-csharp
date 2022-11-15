@@ -37,26 +37,28 @@ namespace SoraApp
         {
             SidePanel.Height = HomeBtn.Height;
             SidePanel.Top = HomeBtn.Top;
-            //firstCustomControl1.BringToFront();
+            this.TabControl.SelectedTab = HomeTabPage;
         }
 
         private void CollectionBtn_Click(object sender, EventArgs e)
         {
             SidePanel.Height = CollectionBtn.Height;
             SidePanel.Top = CollectionBtn.Top;
-            //mySecondCustmControl1.BringToFront();
+            this.TabControl.SelectedTab = CollectionTabPage;
         }
 
         private void SavedBtn_Click(object sender, EventArgs e)
         {
             SidePanel.Height = SavedBtn.Height;
             SidePanel.Top = SavedBtn.Top;
+            this.TabControl.SelectedTab = SavedTabPage;
         }
 
         private void ProfileBtn_Click(object sender, EventArgs e)
         {
             SidePanel.Height = ProfileBtn.Height;
             SidePanel.Top = ProfileBtn.Top;
+            this.TabControl.SelectedTab = ProfileTabPage;
         }
 
         private void HeaderPanel_MouseDown(object sender, MouseEventArgs e)
@@ -86,6 +88,11 @@ namespace SoraApp
         }
 
         private void SearchTb_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ProfileTabPage_Click(object sender, EventArgs e)
         {
 
         }
