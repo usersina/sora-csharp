@@ -14,5 +14,7 @@ public class Book : Artwork
 
     // --------- Relations --------- //
 
+    public Audio? Audio { get; set; }
+
     public ICollection<Genre> Genres { get; set; }
 }
