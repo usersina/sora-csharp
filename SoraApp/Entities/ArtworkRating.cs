@@ -14,7 +14,7 @@ public class ArtworkRating
 {
     public int Id { get; set; } // Using foreign keys as composite key needs some effort
 
-    public int Rating { get; set; }
+    public int Score { get; set; }
 
     public string Content { get; set; }
 

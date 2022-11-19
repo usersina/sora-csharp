@@ -33,14 +33,14 @@
             this.DesignationLbl = new System.Windows.Forms.Label();
             this.NameLbl = new System.Windows.Forms.Label();
             this.AvatarPb = new System.Windows.Forms.PictureBox();
-            this.SidePanel = new System.Windows.Forms.Panel();
+            this.TargeterPanel = new System.Windows.Forms.Panel();
             this.ProfileBtn = new System.Windows.Forms.Button();
             this.SavedBtn = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.CollectionBtn = new System.Windows.Forms.Button();
             this.HomeBtn = new System.Windows.Forms.Button();
             this.QuitPb = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.SubHeaderPanel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.SearchTb = new System.Windows.Forms.TextBox();
@@ -58,7 +58,7 @@
             this.SidebarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AvatarPb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.QuitPb)).BeginInit();
-            this.panel2.SuspendLayout();
+            this.SubHeaderPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.HeaderPanel.SuspendLayout();
@@ -71,7 +71,7 @@
             this.SidebarPanel.Controls.Add(this.DesignationLbl);
             this.SidebarPanel.Controls.Add(this.NameLbl);
             this.SidebarPanel.Controls.Add(this.AvatarPb);
-            this.SidebarPanel.Controls.Add(this.SidePanel);
+            this.SidebarPanel.Controls.Add(this.TargeterPanel);
             this.SidebarPanel.Controls.Add(this.ProfileBtn);
             this.SidebarPanel.Controls.Add(this.SavedBtn);
             this.SidebarPanel.Controls.Add(this.button14);
@@ -117,14 +117,14 @@
             this.AvatarPb.TabIndex = 2;
             this.AvatarPb.TabStop = false;
             // 
-            // SidePanel
+            // TargeterPanel
             // 
-            this.SidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(43)))), ((int)(((byte)(39)))));
-            this.SidePanel.Location = new System.Drawing.Point(1, 183);
-            this.SidePanel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.SidePanel.Name = "SidePanel";
-            this.SidePanel.Size = new System.Drawing.Size(12, 62);
-            this.SidePanel.TabIndex = 4;
+            this.TargeterPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(43)))), ((int)(((byte)(39)))));
+            this.TargeterPanel.Location = new System.Drawing.Point(1, 183);
+            this.TargeterPanel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.TargeterPanel.Name = "TargeterPanel";
+            this.TargeterPanel.Size = new System.Drawing.Size(12, 62);
+            this.TargeterPanel.TabIndex = 4;
             // 
             // ProfileBtn
             // 
@@ -227,20 +227,20 @@
             this.QuitPb.TabStop = false;
             this.QuitPb.Click += new System.EventHandler(this.QuitPb_Click);
             // 
-            // panel2
+            // SubHeaderPanel
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.panel2.Controls.Add(this.panel1);
-            this.panel2.Controls.Add(this.RankLbl);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.CreditLbl);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(236, 50);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(961, 49);
-            this.panel2.TabIndex = 1;
+            this.SubHeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.SubHeaderPanel.Controls.Add(this.panel1);
+            this.SubHeaderPanel.Controls.Add(this.RankLbl);
+            this.SubHeaderPanel.Controls.Add(this.label4);
+            this.SubHeaderPanel.Controls.Add(this.CreditLbl);
+            this.SubHeaderPanel.Controls.Add(this.label1);
+            this.SubHeaderPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.SubHeaderPanel.Location = new System.Drawing.Point(236, 50);
+            this.SubHeaderPanel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.SubHeaderPanel.Name = "SubHeaderPanel";
+            this.SubHeaderPanel.Size = new System.Drawing.Size(961, 49);
+            this.SubHeaderPanel.TabIndex = 1;
             // 
             // panel1
             // 
@@ -357,7 +357,7 @@
             this.TabControl.Location = new System.Drawing.Point(236, 97);
             this.TabControl.Name = "TabControl";
             this.TabControl.SelectedIndex = 0;
-            this.TabControl.Size = new System.Drawing.Size(961, 576);
+            this.TabControl.Size = new System.Drawing.Size(962, 576);
             this.TabControl.TabIndex = 3;
             // 
             // HomeTabPage
@@ -366,7 +366,7 @@
             this.HomeTabPage.Location = new System.Drawing.Point(4, 24);
             this.HomeTabPage.Name = "HomeTabPage";
             this.HomeTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.HomeTabPage.Size = new System.Drawing.Size(953, 548);
+            this.HomeTabPage.Size = new System.Drawing.Size(954, 548);
             this.HomeTabPage.TabIndex = 0;
             this.HomeTabPage.Text = "Home";
             // 
@@ -376,7 +376,7 @@
             this.CollectionTabPage.Location = new System.Drawing.Point(4, 24);
             this.CollectionTabPage.Name = "CollectionTabPage";
             this.CollectionTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.CollectionTabPage.Size = new System.Drawing.Size(953, 548);
+            this.CollectionTabPage.Size = new System.Drawing.Size(954, 548);
             this.CollectionTabPage.TabIndex = 1;
             this.CollectionTabPage.Text = "Collection";
             // 
@@ -385,7 +385,7 @@
             this.SavedTabPage.Location = new System.Drawing.Point(4, 24);
             this.SavedTabPage.Name = "SavedTabPage";
             this.SavedTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.SavedTabPage.Size = new System.Drawing.Size(953, 548);
+            this.SavedTabPage.Size = new System.Drawing.Size(954, 548);
             this.SavedTabPage.TabIndex = 2;
             this.SavedTabPage.Text = "Saved";
             this.SavedTabPage.UseVisualStyleBackColor = true;
@@ -395,7 +395,7 @@
             this.ProfileTabPage.Location = new System.Drawing.Point(4, 24);
             this.ProfileTabPage.Name = "ProfileTabPage";
             this.ProfileTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.ProfileTabPage.Size = new System.Drawing.Size(953, 548);
+            this.ProfileTabPage.Size = new System.Drawing.Size(954, 548);
             this.ProfileTabPage.TabIndex = 3;
             this.ProfileTabPage.Text = "Profile";
             this.ProfileTabPage.UseVisualStyleBackColor = true;
@@ -405,7 +405,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1197, 673);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.SubHeaderPanel);
             this.Controls.Add(this.SidebarPanel);
             this.Controls.Add(this.HeaderPanel);
             this.Controls.Add(this.TabControl);
@@ -414,12 +414,13 @@
             this.Name = "Index";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Index_Load);
             this.SidebarPanel.ResumeLayout(false);
             this.SidebarPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AvatarPb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.QuitPb)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.SubHeaderPanel.ResumeLayout(false);
+            this.SubHeaderPanel.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -436,7 +437,7 @@
         private System.Windows.Forms.Button CollectionBtn;
         private System.Windows.Forms.Button HomeBtn;
         private System.Windows.Forms.Panel HeaderPanel;
-        private System.Windows.Forms.Panel SidePanel;
+        private System.Windows.Forms.Panel TargeterPanel;
         private System.Windows.Forms.Button ProfileBtn;
         private Button SavedBtn;
         private PictureBox QuitPb;
@@ -452,7 +453,7 @@
         private PictureBox pictureBox1;
         private Label label2;
         private Button button14;
-        private Panel panel2;
+        private Panel SubHeaderPanel;
         private TabControl TabControl;
         private TabPage HomeTabPage;
         private TabPage CollectionTabPage;

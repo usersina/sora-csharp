@@ -19,8 +19,9 @@ namespace SoraApp
         public Index()
         {
             InitializeComponent();
-            SidePanel.Height = HomeBtn.Height;
-            SidePanel.Top = HomeBtn.Top;
+            TargeterPanel.Height = HomeBtn.Height;
+            TargeterPanel.Top = HomeBtn.Top;
+            SubHeaderPanel.Height = 71;
             //firstCustomControl1.BringToFront();
         }
 
@@ -35,29 +36,29 @@ namespace SoraApp
 
         private void HomeBtn_Click(object sender, EventArgs e)
         {
-            SidePanel.Height = HomeBtn.Height;
-            SidePanel.Top = HomeBtn.Top;
+            TargeterPanel.Height = HomeBtn.Height;
+            TargeterPanel.Top = HomeBtn.Top;
             this.TabControl.SelectedTab = HomeTabPage;
         }
 
         private void CollectionBtn_Click(object sender, EventArgs e)
         {
-            SidePanel.Height = CollectionBtn.Height;
-            SidePanel.Top = CollectionBtn.Top;
+            TargeterPanel.Height = CollectionBtn.Height;
+            TargeterPanel.Top = CollectionBtn.Top;
             this.TabControl.SelectedTab = CollectionTabPage;
         }
 
         private void SavedBtn_Click(object sender, EventArgs e)
         {
-            SidePanel.Height = SavedBtn.Height;
-            SidePanel.Top = SavedBtn.Top;
+            TargeterPanel.Height = SavedBtn.Height;
+            TargeterPanel.Top = SavedBtn.Top;
             this.TabControl.SelectedTab = SavedTabPage;
         }
 
         private void ProfileBtn_Click(object sender, EventArgs e)
         {
-            SidePanel.Height = ProfileBtn.Height;
-            SidePanel.Top = ProfileBtn.Top;
+            TargeterPanel.Height = ProfileBtn.Height;
+            TargeterPanel.Top = ProfileBtn.Top;
             this.TabControl.SelectedTab = ProfileTabPage;
         }
 
