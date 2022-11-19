@@ -6,22 +6,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SoraApp.Entities;
+namespace SoraApp.Entities.Composite;
 
-[Comment("Artworks reviews for the Reviewer")]
-[Table("artwork_reviews")]
-public class ArtworkReview
+[Comment("Artworks that the User rated")]
+[Table("artwork_ratings")]
+public class ArtworkRating
 {
     public int Id { get; set; } // Using foreign keys as composite key needs some effort
-    public string Summary { get; set; }
-    public string? Details { get; set; }
-    public bool CanBePublished { get; set; }
+
+    public int Score { get; set; }
+
+    public string Content { get; set; }
 
     // --------- Relations --------- //
 
     public int ArtworkId { get; set; }
     public Artwork Artwork { get; set; }
 
-    public int ReviewerId { get; set; }
-    public Reviewer Reviewer { get; set; }
+    public int UserId { get; set; }
+    public User User { get; set; }
 }

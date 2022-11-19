@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore.Infrastructure.Internal;
 using Microsoft.Extensions.Options;
 using SoraApp.Entities;
+using SoraApp.Entities.Composite;
 using System;
 using System.Collections.Generic;
 using System.Configuration.Abstractions;

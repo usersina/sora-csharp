@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
-namespace SoraApp.Entities;
+namespace SoraApp.Entities.Composite;
 
 [Comment("Artworks that the user has bought (not created)")]
 [Table("user_collections")]
