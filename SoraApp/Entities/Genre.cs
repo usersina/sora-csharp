@@ -16,6 +16,5 @@ public class Genre
 
     public ICollection<User> Users { get; set; }
 
-    public int? BookId { get; set; }
-    public Book? Book { get; set; }
+    public ICollection<Book> Books { get; set; }
 }
