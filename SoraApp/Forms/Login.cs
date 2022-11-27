@@ -31,9 +31,11 @@ namespace SoraApp.Forms
         {
             Debug.WriteLine("----------- Login Form Loading -----------");
             dbContext = new ApplicationDbContext();
-            // DEVONLY: Drop and re-create the database
+
+            // DEVONLY: Drop and re-create the database then seed data
             dbContext.Database.EnsureDeleted();
             dbContext.Database.EnsureCreated();
+            new DatabaseSeeder(dbContext).PopulateDatabase();
         }
 
         private void QuitPb_Click(object sender, EventArgs e)

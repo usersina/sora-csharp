@@ -10,7 +10,6 @@ namespace SoraApp
     public partial class Index : Form
     {
         private ApplicationDbContext dbContext;
-        private DatabaseSeeder databaseSeeder;
 
         // Moving the window
         private bool dragging = false;
@@ -20,8 +19,6 @@ namespace SoraApp
         public Index(ApplicationDbContext dbContext)
         {
             this.dbContext = dbContext;
-            this.databaseSeeder = new DatabaseSeeder(dbContext);
-            databaseSeeder.PopulateDatabase();
 
             InitializeComponent();
             TargeterPanel.Height = HomeBtn.Height;
