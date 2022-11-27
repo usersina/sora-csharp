@@ -14,6 +14,13 @@ public class Designation
     public float BonusPerc { get; set; }
 
     // --------- Relations --------- //
-
     public ICollection<User> Users { get; set; }
+
+    // --------- Constructors --------- //
+    public Designation(string name, string description, float bonusPerc)
+    {
+        Name = name;
+        Description = description;
+        BonusPerc = bonusPerc;
+    }
 }

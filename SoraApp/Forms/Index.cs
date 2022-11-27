@@ -10,28 +10,28 @@ namespace SoraApp
     public partial class Index : Form
     {
         private ApplicationDbContext dbContext;
+        private DatabaseSeeder databaseSeeder;
 
         // Moving the window
         private bool dragging = false;
         private Point dragCursorPoint;
         private Point dragFormPoint;
 
-        public Index()
+        public Index(ApplicationDbContext dbContext)
         {
+            this.dbContext = dbContext;
+            this.databaseSeeder = new DatabaseSeeder(dbContext);
+            databaseSeeder.PopulateDatabase();
+
             InitializeComponent();
             TargeterPanel.Height = HomeBtn.Height;
             TargeterPanel.Top = HomeBtn.Top;
             SubHeaderPanel.Height = 71;
-            //firstCustomControl1.BringToFront();
         }
 
         private void Index_Load(object sender, EventArgs e)
         {
             Debug.WriteLine("----------- Index Form Loading -----------");
-            dbContext = new ApplicationDbContext();
-            // DEVONLY: Drop and re-create the database
-            dbContext.Database.EnsureDeleted();
-            dbContext.Database.EnsureCreated();
         }
 
         private void HomeBtn_Click(object sender, EventArgs e)

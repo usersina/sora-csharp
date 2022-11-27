@@ -16,12 +16,25 @@ public class ArtworkReview
     public string Summary { get; set; }
     public string? Details { get; set; }
     public bool CanBePublished { get; set; }
+    public DateTime CreatedAt { get; set; }
 
     // --------- Relations --------- //
-
     public int ArtworkId { get; set; }
     public Artwork Artwork { get; set; }
 
     public int ReviewerId { get; set; }
     public Reviewer Reviewer { get; set; }
+
+    // --------- Constructors --------- //
+    public ArtworkReview() { }
+
+    public ArtworkReview(string summary, string details, bool canBePublished, Reviewer reviewer, Artwork artwork)
+    {
+        Summary = summary;
+        Details = details;
+        CanBePublished = canBePublished;
+        Reviewer = reviewer;
+        Artwork = artwork;
+        CreatedAt = DateTime.Now;
+    }
 }

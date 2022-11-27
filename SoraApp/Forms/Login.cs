@@ -1,7 +1,10 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using SoraApp.DataAccess;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,6 +16,8 @@ namespace SoraApp.Forms
 {
     public partial class Login : Form
     {
+        private ApplicationDbContext dbContext;
+
         private bool dragging = false;
         private Point dragCursorPoint;
         private Point dragFormPoint;
@@ -20,6 +25,15 @@ namespace SoraApp.Forms
         public Login()
         {
             InitializeComponent();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            Debug.WriteLine("----------- Login Form Loading -----------");
+            dbContext = new ApplicationDbContext();
+            // DEVONLY: Drop and re-create the database
+            dbContext.Database.EnsureDeleted();
+            dbContext.Database.EnsureCreated();
         }
 
         private void QuitPb_Click(object sender, EventArgs e)
@@ -54,7 +68,7 @@ namespace SoraApp.Forms
             this.Hide();
 
             // show other form as dialog
-            Index index = new Index();
+            Index index = new Index(dbContext);
             index.ShowDialog();
 
             // close application on dialog quit

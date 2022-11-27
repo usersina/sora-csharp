@@ -16,8 +16,17 @@ public class Audio : Artwork
     public int Duration { get; set; }
 
     // --------- Relations --------- //
-
     public int? BookId { get; set; }
 
     public Book? Book { get; set; }
+
+    // --------- Constructors --------- //
+    public Audio() { }
+
+    public Audio(string title, double cost, string fileUrl, string coverImg, User user, string description, int duration, Book? book) : base(title, cost, fileUrl, coverImg, user)
+    {
+        Description = description;
+        Duration = duration;
+        Book = book;
+    }
 }

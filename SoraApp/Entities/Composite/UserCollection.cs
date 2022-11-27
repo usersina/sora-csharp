@@ -22,10 +22,28 @@ public class UserCollection
     public int? PageCheckpoint { get; set; }
 
     // --------- Relations --------- //
-
     public int UserId { get; set; }
     public User User { get; set; }
 
     public int ArtworkId { get; set; }
     public Artwork Artwork { get; set; }
+
+    // --------- Constructors --------- //
+    public UserCollection() { }
+
+    public UserCollection(DateTime boughtAt, User user, Artwork artwork)
+    {
+        BoughtAt = boughtAt;
+        User = user;
+        Artwork = artwork;
+
+        if (Artwork.GetType() == typeof(Book))
+        {
+            PageCheckpoint = 0;
+        }
+        else if (Artwork.GetType() == typeof(Audio))
+        {
+            DurationCheckpoint = 0;
+        }
+    }
 }

@@ -17,4 +17,10 @@ public class Genre
     public ICollection<User> Users { get; set; }
 
     public ICollection<Book> Books { get; set; }
+
+    public Genre(string name, string description)
+    {
+        Name = name;
+        Description = description;
+    }
 }

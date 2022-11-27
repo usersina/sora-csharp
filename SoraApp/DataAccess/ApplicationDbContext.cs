@@ -38,6 +38,11 @@ public class ApplicationDbContext : DbContext
             .HasMany(left => left.Genres)
             .WithMany(right => right.Users)
             .UsingEntity(join => join.ToTable("interests"));
+
+        modelBuilder.Entity<Book>()
+            .HasMany(left => left.Genres)
+            .WithMany(right => right.Books)
+            .UsingEntity(join => join.ToTable("book_genres"));
     }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
