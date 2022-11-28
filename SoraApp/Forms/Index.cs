@@ -89,10 +89,5 @@ namespace SoraApp
         {
 
         }
-
-        private void ProfileTabPage_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

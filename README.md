@@ -10,4 +10,6 @@ This is a university project that might grow to be something more than that.
 - [Restaurant UI](https://www.youtube.com/watch?v=nLfzH4xOVqo)
 - [Exchanging data, windows form](https://www.youtube.com/watch?v=eVBzrEdk_0s)
 - [Nullable reference](https://www.damirscorner.com/blog/posts/20220812-NullableReferenceTypesAndNullabilityInEfCore.html)
+- [Scrolling a Flow layout Panel](https://www.youtube.com/watch?v=DJX6WgvOgk0)
+- [Center flow layout panel content](https://stackoverflow.com/questions/38824530/how-to-set-flowlayoutpanel-contents-at-center-of-form)
 - https://www.youtube.com/watch?v=YxewTI4H2mY
