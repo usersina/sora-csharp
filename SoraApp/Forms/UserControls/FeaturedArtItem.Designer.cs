@@ -73,7 +73,6 @@
             // 
             // GenreLbl
             // 
-            this.GenreLbl.AutoSize = true;
             this.GenreLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.GenreLbl.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.GenreLbl.Location = new System.Drawing.Point(146, 105);
@@ -81,20 +80,20 @@
             this.GenreLbl.Size = new System.Drawing.Size(47, 15);
             this.GenreLbl.TabIndex = 2;
             this.GenreLbl.Text = "Fantasy";
+            this.GenreLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // AuthorLbl
             // 
-            this.AuthorLbl.AutoSize = true;
             this.AuthorLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.AuthorLbl.Location = new System.Drawing.Point(101, 79);
             this.AuthorLbl.Name = "AuthorLbl";
             this.AuthorLbl.Size = new System.Drawing.Size(136, 21);
             this.AuthorLbl.TabIndex = 1;
             this.AuthorLbl.Text = "Jonathan Smake";
+            this.AuthorLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // TitleLbl
             // 
-            this.TitleLbl.AutoSize = true;
             this.TitleLbl.Font = new System.Drawing.Font("Segoe UI", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.TitleLbl.Location = new System.Drawing.Point(38, 49);
             this.TitleLbl.Name = "TitleLbl";
@@ -111,10 +110,10 @@
             this.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
             this.Name = "FeaturedArtItem";
             this.Size = new System.Drawing.Size(339, 237);
+            this.Load += new System.EventHandler(this.FeaturedArtItem_Load);
             this.panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.CoverPb)).EndInit();
             this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
             this.ResumeLayout(false);
 
         }

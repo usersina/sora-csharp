@@ -19,6 +19,7 @@ public class ApplicationDbContext : DbContext
 
     public DbSet<User> Users { get; set; }
     public DbSet<Reviewer> Reviewers { get; set; }
+    public DbSet<Artwork> Artworks { get; set; }
     public DbSet<Book> Books { get; set; }
     public DbSet<Audio> Audios { get; set; }
     public DbSet<Genre> Genres { get; set; }

@@ -10,7 +10,7 @@ namespace SoraApp
 
     public partial class Index : Form
     {
-        private ApplicationDbContext dbContext;
+        private readonly ApplicationDbContext dbContext;
 
         // Moving the window
         private bool dragging = false;
@@ -30,11 +30,18 @@ namespace SoraApp
         private void Index_Load(object sender, EventArgs e)
         {
             Debug.WriteLine("----------- Index Form Loading -----------");
+
+            // Populate progress list with dummy data
             for (int i = 0; i < 3; i++)
             {
-                FeaturedFLPanel.Controls.Add(new FeaturedArtItem());
                 ProgressFLPanel.Controls.Add(new ProgressArtItem());
             }
+
+            // Populate featured list from DB
+            dbContext.Artworks
+                .Where(art => art.PublishedAt != null)
+                .OrderBy(art => art.PublishedAt)
+                .ToList().ForEach(art => { FeaturedFLPanel.Controls.Add(new FeaturedArtItem(art)); });
         }
 
         private void HomeBtn_Click(object sender, EventArgs e)
