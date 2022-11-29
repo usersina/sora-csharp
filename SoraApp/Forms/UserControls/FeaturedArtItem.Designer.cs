@@ -55,11 +55,13 @@
             // 
             this.CoverPb.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CoverPb.BackgroundImage")));
             this.CoverPb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.CoverPb.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CoverPb.Location = new System.Drawing.Point(96, 0);
             this.CoverPb.Name = "CoverPb";
             this.CoverPb.Size = new System.Drawing.Size(111, 158);
             this.CoverPb.TabIndex = 0;
             this.CoverPb.TabStop = false;
+            this.CoverPb.Click += new System.EventHandler(this.CoverPb_Click);
             // 
             // panel7
             // 
