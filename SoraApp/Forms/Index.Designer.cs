@@ -52,22 +52,10 @@
             this.TabControl = new System.Windows.Forms.TabControl();
             this.HomeTabPage = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.FeaturedFLPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.ProgressFLPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.label7 = new System.Windows.Forms.Label();
             this.CollectionTabPage = new System.Windows.Forms.TabPage();
             this.SavedTabPage = new System.Windows.Forms.TabPage();
@@ -82,15 +70,7 @@
             this.TabControl.SuspendLayout();
             this.HomeTabPage.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.panel7.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // SidebarPanel
@@ -389,95 +369,31 @@
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel2, 0, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(11, 370);
+            this.tableLayoutPanel2.Controls.Add(this.FeaturedFLPanel, 0, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(11, 360);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(926, 281);
             this.tableLayoutPanel2.TabIndex = 5;
             // 
-            // flowLayoutPanel2
+            // FeaturedFLPanel
             // 
-            this.flowLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.flowLayoutPanel2.AutoScroll = true;
-            this.flowLayoutPanel2.AutoSize = true;
-            this.flowLayoutPanel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.flowLayoutPanel2.Controls.Add(this.panel6);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(283, 3);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(359, 275);
-            this.flowLayoutPanel2.TabIndex = 1;
-            this.flowLayoutPanel2.WrapContents = false;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.Transparent;
-            this.panel6.Controls.Add(this.pictureBox4);
-            this.panel6.Controls.Add(this.panel7);
-            this.panel6.Location = new System.Drawing.Point(10, 10);
-            this.panel6.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(339, 237);
-            this.panel6.TabIndex = 6;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(115, 0);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(111, 158);
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.label12);
-            this.panel7.Controls.Add(this.label13);
-            this.panel7.Controls.Add(this.label14);
-            this.panel7.Location = new System.Drawing.Point(0, 112);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(339, 125);
-            this.panel7.TabIndex = 1;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.Location = new System.Drawing.Point(146, 105);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(47, 15);
-            this.label12.TabIndex = 2;
-            this.label12.Text = "Fantasy";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(101, 79);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(136, 21);
-            this.label13.TabIndex = 1;
-            this.label13.Text = "Jonathan Smake";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label14.Location = new System.Drawing.Point(38, 49);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(263, 30);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "Time Travel for Dummies";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.FeaturedFLPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.FeaturedFLPanel.AutoScroll = true;
+            this.FeaturedFLPanel.AutoSize = true;
+            this.FeaturedFLPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.FeaturedFLPanel.Location = new System.Drawing.Point(463, 3);
+            this.FeaturedFLPanel.Name = "FeaturedFLPanel";
+            this.FeaturedFLPanel.Size = new System.Drawing.Size(0, 275);
+            this.FeaturedFLPanel.TabIndex = 1;
+            this.FeaturedFLPanel.WrapContents = false;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(11, 327);
+            this.label3.Location = new System.Drawing.Point(11, 317);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(111, 32);
             this.label3.TabIndex = 4;
@@ -487,7 +403,7 @@
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.ProgressFLPanel, 0, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(11, 69);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
@@ -495,81 +411,17 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(926, 228);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
-            // flowLayoutPanel1
+            // ProgressFLPanel
             // 
-            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.AutoSize = true;
-            this.flowLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.flowLayoutPanel1.Controls.Add(this.panel4);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(283, 3);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(359, 222);
-            this.flowLayoutPanel1.TabIndex = 1;
-            this.flowLayoutPanel1.WrapContents = false;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Transparent;
-            this.panel4.Controls.Add(this.pictureBox3);
-            this.panel4.Controls.Add(this.panel5);
-            this.panel4.Location = new System.Drawing.Point(10, 10);
-            this.panel4.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(339, 180);
-            this.panel4.TabIndex = 3;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(33, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(111, 158);
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel5.Controls.Add(this.label8);
-            this.panel5.Controls.Add(this.label9);
-            this.panel5.Controls.Add(this.label10);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 55);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(339, 125);
-            this.panel5.TabIndex = 1;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(173, 75);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(95, 15);
-            this.label8.TabIndex = 2;
-            this.label8.Text = "Read a week ago";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(173, 56);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(105, 17);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "Page 190 of 350";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(171, 17);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(129, 32);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "Book Title";
+            this.ProgressFLPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.ProgressFLPanel.AutoScroll = true;
+            this.ProgressFLPanel.AutoSize = true;
+            this.ProgressFLPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ProgressFLPanel.Location = new System.Drawing.Point(463, 3);
+            this.ProgressFLPanel.Name = "ProgressFLPanel";
+            this.ProgressFLPanel.Size = new System.Drawing.Size(0, 222);
+            this.ProgressFLPanel.TabIndex = 1;
+            this.ProgressFLPanel.WrapContents = false;
             // 
             // label7
             // 
@@ -642,18 +494,8 @@
             this.HomeTabPage.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            this.flowLayoutPanel2.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -685,24 +527,12 @@
         private TabPage CollectionTabPage;
         private TabPage SavedTabPage;
         private TabPage ProfileTabPage;
-        private FlowLayoutPanel flowLayoutPanel1;
+        private FlowLayoutPanel ProgressFLPanel;
         private Label label7;
         private TableLayoutPanel tableLayoutPanel1;
-        private Panel panel4;
-        private PictureBox pictureBox3;
-        private Panel panel5;
-        private Label label8;
-        private Label label9;
-        private Label label10;
         private TableLayoutPanel tableLayoutPanel2;
-        private FlowLayoutPanel flowLayoutPanel2;
+        private FlowLayoutPanel FeaturedFLPanel;
         private Label label3;
-        private Panel panel6;
-        private PictureBox pictureBox4;
-        private Panel panel7;
-        private Label label12;
-        private Label label13;
-        private Label label14;
         //private FirstCustomControl firstCustomControl1;
         //private MySecondCustmControl mySecondCustmControl1;
     }

@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using SoraApp.DataAccess;
 using SoraApp.Entities;
+using SoraApp.Forms.UserControls;
 using System.Diagnostics;
 using System.Threading.Tasks;
 
@@ -29,6 +30,11 @@ namespace SoraApp
         private void Index_Load(object sender, EventArgs e)
         {
             Debug.WriteLine("----------- Index Form Loading -----------");
+            for (int i = 0; i < 3; i++)
+            {
+                FeaturedFLPanel.Controls.Add(new FeaturedArtItem());
+                ProgressFLPanel.Controls.Add(new ProgressArtItem());
+            }
         }
 
         private void HomeBtn_Click(object sender, EventArgs e)
