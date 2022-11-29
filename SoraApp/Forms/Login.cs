@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SoraApp.DataAccess;
+using SoraApp.Entities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -66,6 +67,18 @@ namespace SoraApp.Forms
 
         private void SignInBtn_Click(object sender, EventArgs e)
         {
+            string usernameOrEmail = EmailTb.Text;
+            string password = PasswordTb.Text;
+            User? user = this.dbContext
+                .Users
+                .Where(user => user.Username == usernameOrEmail || user.Email == usernameOrEmail)
+                .FirstOrDefault();
+            if (user == null || user.Password != password)
+            {
+                MessageBox.Show("Cannot login with the specified credentials!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             // hide main form
             this.Hide();
 

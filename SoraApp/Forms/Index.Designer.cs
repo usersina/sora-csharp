@@ -58,8 +58,11 @@
             this.ProgressFLPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.label7 = new System.Windows.Forms.Label();
             this.CollectionTabPage = new System.Windows.Forms.TabPage();
+            this.label5 = new System.Windows.Forms.Label();
             this.SavedTabPage = new System.Windows.Forms.TabPage();
+            this.label6 = new System.Windows.Forms.Label();
             this.ProfileTabPage = new System.Windows.Forms.TabPage();
+            this.label8 = new System.Windows.Forms.Label();
             this.SidebarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AvatarPb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.QuitPb)).BeginInit();
@@ -71,6 +74,9 @@
             this.HomeTabPage.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.CollectionTabPage.SuspendLayout();
+            this.SavedTabPage.SuspendLayout();
+            this.ProfileTabPage.SuspendLayout();
             this.SuspendLayout();
             // 
             // SidebarPanel
@@ -353,7 +359,7 @@
             // 
             // HomeTabPage
             // 
-            this.HomeTabPage.BackColor = System.Drawing.Color.Transparent;
+            this.HomeTabPage.BackColor = System.Drawing.Color.WhiteSmoke;
             this.HomeTabPage.Controls.Add(this.tableLayoutPanel2);
             this.HomeTabPage.Controls.Add(this.label3);
             this.HomeTabPage.Controls.Add(this.tableLayoutPanel1);
@@ -435,7 +441,8 @@
             // 
             // CollectionTabPage
             // 
-            this.CollectionTabPage.BackColor = System.Drawing.Color.Transparent;
+            this.CollectionTabPage.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.CollectionTabPage.Controls.Add(this.label5);
             this.CollectionTabPage.Location = new System.Drawing.Point(4, 24);
             this.CollectionTabPage.Name = "CollectionTabPage";
             this.CollectionTabPage.Padding = new System.Windows.Forms.Padding(3);
@@ -443,25 +450,57 @@
             this.CollectionTabPage.TabIndex = 1;
             this.CollectionTabPage.Text = "Collection";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(18, 25);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(213, 32);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Collection content";
+            // 
             // SavedTabPage
             // 
+            this.SavedTabPage.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.SavedTabPage.Controls.Add(this.label6);
             this.SavedTabPage.Location = new System.Drawing.Point(4, 24);
             this.SavedTabPage.Name = "SavedTabPage";
             this.SavedTabPage.Padding = new System.Windows.Forms.Padding(3);
             this.SavedTabPage.Size = new System.Drawing.Size(954, 684);
             this.SavedTabPage.TabIndex = 2;
             this.SavedTabPage.Text = "Saved";
-            this.SavedTabPage.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(21, 25);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(170, 32);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Saved content";
             // 
             // ProfileTabPage
             // 
+            this.ProfileTabPage.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ProfileTabPage.Controls.Add(this.label8);
             this.ProfileTabPage.Location = new System.Drawing.Point(4, 24);
             this.ProfileTabPage.Name = "ProfileTabPage";
             this.ProfileTabPage.Padding = new System.Windows.Forms.Padding(3);
             this.ProfileTabPage.Size = new System.Drawing.Size(954, 684);
             this.ProfileTabPage.TabIndex = 3;
             this.ProfileTabPage.Text = "Profile";
-            this.ProfileTabPage.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(19, 25);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(175, 32);
+            this.label8.TabIndex = 6;
+            this.label8.Text = "Profile content";
             // 
             // Index
             // 
@@ -496,6 +535,12 @@
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            this.CollectionTabPage.ResumeLayout(false);
+            this.CollectionTabPage.PerformLayout();
+            this.SavedTabPage.ResumeLayout(false);
+            this.SavedTabPage.PerformLayout();
+            this.ProfileTabPage.ResumeLayout(false);
+            this.ProfileTabPage.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -533,6 +578,9 @@
         private TableLayoutPanel tableLayoutPanel2;
         private FlowLayoutPanel FeaturedFLPanel;
         private Label label3;
+        private Label label5;
+        private Label label6;
+        private Label label8;
         //private FirstCustomControl firstCustomControl1;
         //private MySecondCustmControl mySecondCustmControl1;
     }
